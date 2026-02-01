@@ -1,230 +1,110 @@
-/* ===============================
-   GLOBAL
-================================ */
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
   background:
     linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
     url("./bg.png") no-repeat center center fixed;
   background-size: cover;
-  margin: 0;
-  padding: 0;
-  color: #2c3e50;
+  color: #111;
 }
 
-
-/* ===============================
-   HERO SECTION (TEXT HIGHLIGHT)
-================================ */
+/* HERO */
 .hero {
-  padding: 120px 20px 80px;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  padding: 60px 20px;
 }
 
-.hero-text {
-  display: inline-block;
-  background: rgba(0, 0, 0, 0.65); /* STRONG text highlight */
-  padding: 40px 50px;
-  border-radius: 14px;
+.hero-content {
+  max-width: 800px;
 }
 
-/* NAME */
-.hero-text h1 {
-  color: #ffffff;
+.hero h1 {
   font-size: 44px;
-  font-weight: 800;
-  margin: 0 0 10px;
-  text-shadow: 0 3px 10px rgba(0,0,0,0.9);
+  color: #fff;
+  font-weight: 700;
 }
 
-/* ROLE */
-.hero-text .role {
-  color: #dbeafe;
+.hero h2 {
   font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 18px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+  color: #dbeafe;
+  margin: 10px 0 20px;
+  font-weight: 500;
 }
 
-/* SUMMARY */
-.hero-text .summary {
-  color: #ffffff;
-  font-size: 17px;
+.hero .intro {
+  font-size: 18px;
+  color: #f1f5f9;
   line-height: 1.7;
-  max-width: 850px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.8);
 }
 
-/* ===============================
-   SECTIONS (NAUKRI STYLE)
-================================ */
-.section {
+/* CARD */
+.card {
+  background: #ffffff;
   max-width: 900px;
-  margin: 60px auto;
-  padding: 0 20px;
+  margin: -80px auto 60px;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
-.section h2 {
-  color: #34495e;
-  margin-bottom: 20px;
-  position: relative;
+/* SECTIONS */
+section {
+  margin-bottom: 40px;
 }
 
-/* underline */
-.section h2::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 4px;
-  background: #0d6efd;
-  margin-top: 8px;
-  border-radius: 2px;
+h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #1f2937;
 }
 
-/* ===============================
-   SKILLS
-================================ */
-.skill-list {
+/* SKILLS */
+.skills {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   list-style: none;
-  padding: 0;
 }
 
-.skill-list li {
-  background: #eef3ff;
+.skills li {
+  background: #eef2ff;
   padding: 10px 16px;
-  border-radius: 20px;
+  border-radius: 999px;
   font-size: 14px;
 }
 
-/* ===============================
-   PROJECTS
-================================ */
-.project-list {
-  list-style: none;
-  padding: 0;
-}
-
-.project-list li {
-  background: #ffffff;
-  padding: 18px;
-  border-radius: 12px;
+/* PROJECTS */
+.project {
   margin-bottom: 16px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
-.project-list strong {
+.project strong {
   font-size: 16px;
 }
 
-.project-list p {
-  margin: 6px 0 0;
+.project p {
   color: #555;
-}
-
-/* ===============================
-   LINKS
-================================ */
-a {
-  color: #0d6efd;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* ===============================
-   MOBILE
-================================ */
-@media (max-width: 600px) {
-  .hero {
-    padding: 80px 15px 60px;
-  }
-
-  .hero-text {
-    padding: 30px 25px;
-  }
-
-  .hero-text h1 {
-    font-size: 30px;
-  }
-
-  .hero-text .role {
-    font-size: 18px;
-  }
-}
-/* ===============================
-   NAUKRI STYLE PROFILE HEADER
-================================ */
-.profile-header {
-  background: #ffffff;
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 30px;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
-
-.profile-photo {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 4px solid #22c55e; /* green ring like Naukri */
-  background: #f3f4f6;
-  flex-shrink: 0;
-}
-
-.profile-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-/* PROFILE INFO */
-.profile-info h1 {
-  margin: 0;
-  font-size: 28px;
-}
-
-.profile-info .title {
-  font-size: 18px;
-  color: #2563eb;
-  margin: 6px 0;
-}
-
-.profile-info .company {
-  font-size: 15px;
-  color: #555;
-  margin-bottom: 14px;
-}
-
-/* META INFO */
-.meta {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  font-size: 14px;
-  color: #374151;
+  margin-top: 6px;
 }
 
 /* MOBILE */
-@media (max-width: 768px) {
-  .profile-header {
-    flex-direction: column;
-    text-align: center;
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .card {
+    margin: -40px 15px 40px;
+    padding: 30px;
   }
 }
-
-
-
-
-
