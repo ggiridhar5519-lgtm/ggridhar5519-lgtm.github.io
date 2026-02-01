@@ -98,4 +98,16 @@ h2::after {
   margin: 10px auto 0;
   border-radius: 2px;
 }
+section {
+  margin-bottom: 60px;
+}
+
+ul {
+  margin-bottom: 40px;
+}
+
+li p {
+  margin: 6px 0 0;
+}
+
 
