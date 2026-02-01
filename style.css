@@ -108,3 +108,13 @@ h3 {
     padding: 30px;
   }
 }
+/* STEP 2: Section Highlight */
+.card section {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  border-left: 6px solid #2563eb;
+}
+
