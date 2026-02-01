@@ -188,4 +188,39 @@ li p {
   color: #555;
 }
 
+/* HERO TEXT HIGHLIGHT */
+.hero {
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-text {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.45); /* text highlight */
+  padding: 30px 40px;
+  border-radius: 12px;
+}
+
+.hero-text h1 {
+  color: #ffffff;
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.hero-text .role {
+  color: #cfe2ff;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.hero-text .summary {
+  color: #f1f1f1;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+
 
