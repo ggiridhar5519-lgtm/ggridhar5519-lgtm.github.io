@@ -44,5 +44,15 @@ a {
 a:hover {
   text-decoration: underline;
 }
+@media (max-width: 600px) {
+  li {
+    width: 90%;
+  }
+
+  body {
+    margin-top: 50px;
+  }
+}
+
 
 
