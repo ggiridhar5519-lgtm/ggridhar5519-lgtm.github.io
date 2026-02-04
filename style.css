@@ -158,6 +158,39 @@ body {
   color: #e5e7eb;
 }
 
+/* HERO LAYOUT */
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* HERO IMAGE */
+.hero-image img {
+  width: 320px;
+  height: auto;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  filter: grayscale(20%);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 240px;
+  }
+}
+
+
 .project-card .tools {
   font-size: 14px;
   color: #94a3b8;
