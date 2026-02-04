@@ -38,10 +38,44 @@ body {
   align-items: center;
 }
 
+/* LOGO / LABEL WITH ANIMATION */
 .logo {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 18px;
   color: #0f172a;
+  position: relative;
+  cursor: pointer;
+  animation: logoFade 0.8s ease-out forwards;
 }
+
+/* underline animation */
+.logo::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #0ea5e9;
+  transition: width 0.4s ease;
+}
+
+.logo:hover::after {
+  width: 100%;
+}
+
+/* page load animation */
+@keyframes logoFade {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 .nav-links a {
   color: #334155;
