@@ -92,7 +92,7 @@ body {
 }
 
 /* =========================
-   HERO
+   HERO (MERGED + CLEAN)
 ========================= */
 .hero {
   min-height: 90vh;
@@ -100,16 +100,14 @@ body {
   align-items: center;
   justify-content: center;
   padding: 80px 20px;
-}
 
-.hero {
-  background:
-    linear-gradient(
-      to right,
-      rgba(248,250,252,0.95),
-      rgba(248,250,252,0.85),
-      rgba(248,250,252,0.75)
-    );
+  /* soft focus layer over cloud bg */
+  background: linear-gradient(
+    to right,
+    rgba(248,250,252,0.95),
+    rgba(248,250,252,0.85),
+    rgba(248,250,252,0.75)
+  );
 }
 
 .hero-container {
